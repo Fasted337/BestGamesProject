@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="Логотип BestGames" class="header__logo-image">
+          <div class="header__logo-text">
+            <p class="header__logo-title">Best</p>
+            <span class="header__logo-accent">Games</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="header__burger-toggle">
+
+        <label for="burger-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__nav-wrapper">
+          <nav class="header__navbar">
+            <a href="index.html#quick-search" class="header__link">Поиск</a>
+            <a href="profile.html" class="header__link">Личный кабинет</a>
+            <a href="catalog.html" class="header__link">Каталог игр</a>
+            <a href="profile.html" class="header__link">Избранное</a>
+          </nav>
+          <a href="login.html" class="header__registration">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="profile">
+    <div class="container">
+      <div class="profile__info">
+        <h2 class="profile__title">Информация</h2>
+        <div class="profile__list">
+          <p class="profile__field"><span class="profile__label">E-mail:</span> your@mail.ru</p>
+          <p class="profile__field"><span class="profile__label">Фамилия:</span> Иванов</p>
+          <p class="profile__field"><span class="profile__label">Имя:</span> Иван</p>
+          <p class="profile__field"><span class="profile__label">Дата рождения:</span> 01.01.2000</p>
+          <p class="profile__field"><span class="profile__label">Телефон:</span> +7 (999) 123-45-67</p>
+        </div>
+        <button class="profile__button">Сменить пароль</button>
+      </div>
+      <div class="profile__shop-history">
+        <h2 class="profile__title">История покупок</h2>
+        <table class="profile__table">
+          <thead class="profile__table-head">
+            <tr>
+              <th>Дата покупки</th>
+              <th>Название игры</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody class="profile__table-body">
+            <tr>
+              <td>15.11.2026</td>
+              <td>Grand Theft Auto VI</td>
+              <td>7999 ₽</td>
+            </tr>
+            <tr>
+              <td>10.10.2026</td>
+              <td>Cyberpunk 2077</td>
+              <td>950 ₽</td>
+            </tr>
+            <tr>
+              <td>01.09.2026</td>
+              <td>Elden Ring</td>
+              <td>3599 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:89008007766" class="footer__link">8-800-900-77-66</a>
+          <a href="mailto:best@games.ru" class="footer__link">best@games.ru</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнёрам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="index.html#quick-search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

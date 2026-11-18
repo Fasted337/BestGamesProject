@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="Логотип BestGames" class="header__logo-image">
+          <div class="header__logo-text">
+            <p class="header__logo-title">Best</p>
+            <span class="header__logo-accent">Games</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="header__burger-toggle">
+
+        <label for="burger-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__nav-wrapper">
+          <nav class="header__navbar">
+            <a href="index.html#quick-search" class="header__link">Поиск</a>
+            <a href="profile.html" class="header__link">Личный кабинет</a>
+            <a href="catalog.html" class="header__link">Каталог игр</a>
+            <a href="profile.html" class="header__link">Избранное</a>
+          </nav>
+          <a href="login.html" class="header__registration">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="admin-panel">
+    <div class="container">
+      <div class="admin-panel__add-game">
+        <h2 class="admin-panel__title">Добавить игру</h2>
+        <form class="admin-panel__form">
+          <input type="text" name="title" class="admin-panel__input" placeholder="Название игры" required>
+          <input type="text" name="company" class="admin-panel__input" placeholder="Компания-разработчик" required>
+          <input type="number" name="price" class="admin-panel__input" placeholder="Цена, ₽" required>
+          <select name="genres" class="admin-panel__select">
+            <option value="all" disabled selected>Все жанры</option>
+            <option value="action">Экшен</option>
+            <option value="rpg">RPG</option>
+            <option value="strategy">Стратегия</option>
+          </select>
+          <select name="platform" class="admin-panel__select">
+            <option value="all" disabled selected>Все платформы</option>
+            <option value="pc">PC</option>
+            <option value="ps5">PlayStation 5</option>
+            <option value="xbox">Xbox Series X</option>
+          </select>
+          <select name="status" class="admin-panel__select">
+            <option value="in_stock" disabled selected>В наличии</option>
+            <option value="pre_order">Предзаказ</option>
+            <option value="out_of_stock">Нет в продаже</option>
+            <option value="hidden">Скрыто</option>
+          </select>
+
+          <input type="file" name="image" id="game-cover" class="admin-panel__file-input"
+            accept="image/jpeg, image/png">
+
+          <label for="game-cover" class="admin-panel__file-label">
+            <span class="admin-panel__file-icon">📁</span>
+            Нажмите, чтобы загрузить обложку (JPG/PNG)
+          </label>
+
+          <textarea name="description" class="admin-panel__textarea" placeholder="Описание игры" required></textarea>
+          <button type="submit" class="admin-panel__button admin-panel__button--add">Добавить</button>
+        </form>
+      </div>
+      <div class="admin-panel__redact-games">
+        <h2 class="admin-panel__title">Редактировать игры</h2>
+        <div class="admin-panel__toolbar">
+          <input type="text" name="search" class="admin-panel__search" placeholder="Поиск по названию...">
+        </div>
+        <div class="admin-panel__table-wrapper">
+          <table class="admin-panel__table">
+            <thead class="admin-panel__table-head">
+              <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Цена</th>
+                <th>Статус</th>
+                <th>Действия</th>
+              </tr>
+            </thead>
+            <tbody class="admin-panel__table-body">
+              <tr>
+                <td>Cyberpunk 2077</td>
+                <td>RPG</td>
+                <td>950 ₽</td>
+                <td>В наличии</td>
+                <td class="admin-panel__actions">
+                  <button class="admin-panel__btn admin-panel__btn--edit">✎</button>
+                  <button class="admin-panel__btn admin-panel__btn--delete">✕</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Elden Ring</td>
+                <td>RPG</td>
+                <td>3599 ₽</td>
+                <td>В наличии</td>
+                <td class="admin-panel__actions">
+                  <button class="admin-panel__btn admin-panel__btn--edit">✎</button>
+                  <button class="admin-panel__btn admin-panel__btn--delete">✕</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Baldur's Gate 3</td>
+                <td>RPG</td>
+                <td>1999 ₽</td>
+                <td>В наличии</td>
+                <td class="admin-panel__actions">
+                  <button class="admin-panel__btn admin-panel__btn--edit">✎</button>
+                  <button class="admin-panel__btn admin-panel__btn--delete">✕</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Counter-Strike 2</td>
+                <td>Тактический шутер</td>
+                <td>Бесплатно</td>
+                <td>В наличии</td>
+                <td class="admin-panel__actions">
+                  <button class="admin-panel__btn admin-panel__btn--edit">✎</button>
+                  <button class="admin-panel__btn admin-panel__btn--delete">✕</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Dota 2</td>
+                <td>MOBA</td>
+                <td>Бесплатно</td>
+                <td>В наличии</td>
+                <td class="admin-panel__actions">
+                  <button class="admin-panel__btn admin-panel__btn--edit">✎</button>
+                  <button class="admin-panel__btn admin-panel__btn--delete">✕</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admin-panel__pagination">
+          <button class="admin-panel__page-btn">&larr;</button>
+          <button class="admin-panel__page-btn admin-panel__page-btn--active">1</button>
+          <button class="admin-panel__page-btn">2</button>
+          <button class="admin-panel__page-btn">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:89008007766" class="footer__link">8-800-900-77-66</a>
+          <a href="mailto:best@games.ru" class="footer__link">best@games.ru</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнёрам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="index.html#quick-search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

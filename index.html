@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BestGames</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="Логотип BestGames" class="header__logo-image">
+          <div class="header__logo-text">
+            <p class="header__logo-title">Best</p>
+            <span class="header__logo-accent">Games</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="header__burger-toggle">
+
+        <label for="burger-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__nav-wrapper">
+          <nav class="header__navbar">
+            <a href="#quick-search" class="header__link">Поиск</a>
+            <a href="profile.html" class="header__link">Личный кабинет</a>
+            <a href="catalog.html" class="header__link">Каталог игр</a>
+            <a href="profile.html" class="header__link">Избранное</a>
+          </nav>
+          <a href="login.html" class="header__registration">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="slider">
+    <div class="container">
+      <h2 class="slider__title-main">Новинки игр</h2>
+      <input type="radio" name="slider-toggles" id="slider-toggle-1" class="slider__toggle" checked>
+      <input type="radio" name="slider-toggles" id="slider-toggle-2" class="slider__toggle">
+      <input type="radio" name="slider-toggles" id="slider-toggle-3" class="slider__toggle">
+      <div class="slider__viewport">
+
+        <div class="slider__track">
+          <article class="slider__slide">
+            <h3 class="slider__title">Grand Theft Auto VI</h3>
+            <p class="slider__price">7999 <span class="slider__price-accent">₽</span></p>
+            <a href="result.html" class="slider__more-btn">Подробнее</a>
+          </article>
+
+          <article class="slider__slide">
+            <h3 class="slider__title">S.T.A.L.K.E.R. 2: Heart of Chornobyl</h3>
+            <p class="slider__price">1499 <span class="slider__price-accent">₽</span></p>
+            <a href="result.html" class="slider__more-btn">Подробнее</a>
+          </article>
+
+          <article class="slider__slide">
+            <h3 class="slider__title">Hollow Knight: Silksong</h3>
+            <p class="slider__price">3999 <span class="slider__price-accent">₽</span></p>
+            <a href="result.html" class="slider__more-btn">Подробнее</a>
+          </article>
+        </div>
+
+        <div class="slider__arrows">
+          <div class="slider__arrows-group slider__arrows-group--1">
+            <label for="slider-toggle-3" class="slider__arrow slider__arrow--prev">&#10094;</label>
+            <label for="slider-toggle-2" class="slider__arrow slider__arrow--next">&#10095;</label>
+          </div>
+          <div class="slider__arrows-group slider__arrows-group--2">
+            <label for="slider-toggle-1" class="slider__arrow slider__arrow--prev">&#10094;</label>
+            <label for="slider-toggle-3" class="slider__arrow slider__arrow--next">&#10095;</label>
+          </div>
+          <div class="slider__arrows-group slider__arrows-group--3">
+            <label for="slider-toggle-2" class="slider__arrow slider__arrow--prev">&#10094;</label>
+            <label for="slider-toggle-1" class="slider__arrow slider__arrow--next">&#10095;</label>
+          </div>
+        </div>
+      </div>
+      <div class="slider__dots">
+        <label for="slider-toggle-1" class="slider__dot"></label>
+        <label for="slider-toggle-2" class="slider__dot"></label>
+        <label for="slider-toggle-3" class="slider__dot"></label>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-search" id="quick-search">
+    <div class="container">
+      <h2 class="quick-search__title">Быстрый поиск по жанрам</h2>
+
+      <input type="checkbox" id="search-toggle" class="quick-search__toggle">
+
+      <div class="quick-search__form">
+        <input type="text" list="genres" class="quick-search__input" placeholder="Например: RPG или Экшен...">
+        <datalist id="genres">
+          <option value="Экшен"></option>
+          <option value="Открытый мир"></option>
+          <option value="Криминал"></option>
+          <option value="Шутер"></option>
+        </datalist>
+
+        <label for="search-toggle" class="quick-search__btn">Найти</label>
+      </div>
+
+      <div class="quick-search__modal">
+        <label for="search-toggle" class="quick-search__overlay"></label>
+
+        <div class="quick-search__content">
+          <label for="search-toggle" class="quick-search__close">&times;</label>
+
+          <div class="quick-search__card">
+            <img src="images/quick-search-game.png" class="quick-search__img" alt="Игра">
+            <p class="quick-search__game-genre">Экшен / Открытый мир</p>
+            <h3 class="quick-search__game-title">Grand Theft Auto VI</h3>
+            <p class="quick-search__game-price">7999 <span class="quick-search__price-accent">₽</span></p>
+            <a href="result.html" class="quick-search__more-btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <h2 class="advantages__title">Преимущества Best<span class="advantages__title-accent">Games</span></h2>
+      <div class="advantages__grid">
+        <div class="advantages__card">
+          <div class="advantages__icon">$</div>
+          <h3 class="advantages__card-title">Привлекательные цены</h3>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon">%</div>
+          <h3 class="advantages__card-title">Ежемесячные акции</h3>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon">24/7</div>
+          <h3 class="advantages__card-title">Круглосуточная поддержка</h3>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon">>></div>
+          <h3 class="advantages__card-title">Быстрая покупка</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="game-cards">
+    <div class="container">
+      <h2 class="game-cards__title-main">Популярные игры</h2>
+      <div class="game-cards__grid">
+        <article class="game-cards__card">
+          <a href="catalog.html" class="game-cards__link">
+            <img src="images/game-card1.png" class="game-cards__image" alt="Игра">
+            <h3 class="game-cards__title">Counter-Strike 2</h3>
+            <p class="game-cards__genre">Тактический шутер</p>
+            <p class="game-cards__developer">Valve</p>
+            <div class="game-cards__rating">
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star">&#10029;</div>
+            </div>
+            <p class="game-cards__price">Бесплатно</p>
+          </a>
+        </article>
+        <article class="game-cards__card">
+          <a href="catalog.html" class="game-cards__link">
+            <img src="images/game-card2.png" class="game-cards__image" alt="Игра">
+            <h3 class="game-cards__title">Dota 2</h3>
+            <p class="game-cards__genre">MOBA</p>
+            <p class="game-cards__developer">Valve</p>
+            <div class="game-cards__rating">
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star">&#10029;</div>
+            </div>
+            <p class="game-cards__price">Бесплатно</p>
+          </a>
+        </article>
+        <article class="game-cards__card">
+          <a href="catalog.html" class="game-cards__link">
+            <img src="images/game-card3.png" class="game-cards__image" alt="Игра">
+            <h3 class="game-cards__title">Elden Ring</h3>
+            <p class="game-cards__genre">RPG / слоуслайк</p>
+            <p class="game-cards__developer">FromSoftware</p>
+            <div class="game-cards__rating">
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+            </div>
+            <p class="game-cards__price">3599 <span class="game-cards__price-accent">₽</span></p>
+          </a>
+        </article>
+        <article class="game-cards__card">
+          <a href="catalog.html" class="game-cards__link">
+            <img src="images/game-card4.png" class="game-cards__image" alt="Игра">
+            <h3 class="game-cards__title">Baldur's Gate 3</h3>
+            <p class="game-cards__genre">RPG</p>
+            <p class="game-cards__developer">Larian Studios</p>
+            <div class="game-cards__rating">
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+            </div>
+            <p class="game-cards__price">1999 <span class="game-cards__price-accent">₽</span></p>
+          </a>
+        </article>
+        <article class="game-cards__card">
+          <a href="catalog.html" class="game-cards__link">
+            <img src="images/game-card5.png" class="game-cards__image" alt="Игра">
+            <h3 class="game-cards__title">Cyberpunk 2077</h3>
+            <p class="game-cards__genre">RPG / Экшен</p>
+            <p class="game-cards__developer">CD Projekt RED</p>
+            <div class="game-cards__rating">
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star game-cards__star--filled">&#10029;</div>
+              <div class="game-cards__star">&#10029;</div>
+            </div>
+            <p class="game-cards__price">950 <span class="game-cards__price-accent">₽</span></p>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter">
+    <div class="container">
+      <h2 class="filter__title">Поиск по каталогу</h2>
+      <form class="filter__form">
+        <div class="filter__group">
+          <label for="genre" class="filter__label">Жанры</label>
+          <select id="genre" class="filter__select">
+            <option value="all">Все жанры</option>
+            <option value="action">Экшен</option>
+            <option value="rpg">RPG</option>
+            <option value="strategy">Стратегия</option>
+          </select>
+        </div>
+
+        <div class="filter__group">
+          <label for="tags" class="filter__label">Теги/Механики</label>
+          <select id="tags" class="filter__select">
+            <option value="all">Все теги</option>
+            <option value="coop">Кооператив</option>
+            <option value="pvp">PvP</option>
+            <option value="openworld">Открытый мир</option>
+          </select>
+        </div>
+
+        <div class="filter__group">
+          <label for="platform" class="filter__label">Платформы</label>
+          <select id="platform" class="filter__select">
+            <option value="all">Все платформы</option>
+            <option value="pc">PC</option>
+            <option value="ps5">PlayStation 5</option>
+            <option value="xbox">Xbox Series X</option>
+          </select>
+        </div>
+
+        <div class="filter__group">
+          <label for="price" class="filter__label">Цена, ₽</label>
+          <input type="number" id="price" class="filter__input" placeholder="до 5000">
+        </div>
+
+        <div class="filter__group filter__group--checkbox">
+          <div class="filter__checkbox-label">
+            <input type="checkbox" id="filter__checkbox">
+            <span>Есть в библиотеке</span>
+          </div>
+        </div>
+
+        <button type="button" class="filter__button">Поиск</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <h2 class="partners__title-main">Наши партнёры</h2>
+      <div class="partners__cards">
+        <div class="partners__card">
+          <img src="images/partner1.png" class="partners__image" alt="Логотип партнёра">
+          <h3 class="partners__title">Nova Interactive</h3>
+        </div>
+        <div class="partners__card">
+          <img src="images/partner2.png" class="partners__image" alt="Логотип партнёра">
+          <h3 class="partners__title">GamePay</h3>
+        </div>
+        <div class="partners__card">
+          <img src="images/partner3.png" class="partners__image" alt="Логотип партнёра">
+          <h3 class="partners__title">Titan Esports</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:89008007766" class="footer__link">8-800-900-77-66</a>
+          <a href="mailto:best@games.ru" class="footer__link">best@games.ru</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнёрам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="index.html#quick-search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

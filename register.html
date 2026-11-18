@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="Логотип BestGames" class="header__logo-image">
+          <div class="header__logo-text">
+            <p class="header__logo-title">Best</p>
+            <span class="header__logo-accent">Games</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="header__burger-toggle">
+
+        <label for="burger-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__nav-wrapper">
+          <nav class="header__navbar">
+            <a href="index.html#quick-search" class="header__link">Поиск</a>
+            <a href="profile.html" class="header__link">Личный кабинет</a>
+            <a href="catalog.html" class="header__link">Каталог игр</a>
+            <a href="profile.html" class="header__link">Избранное</a>
+          </nav>
+          <a href="login.html" class="header__registration">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="auth">
+    <div class="container">
+      <form class="auth__form">
+        <h2 class="auth__title">Регистрация</h2>
+        <input type="email" name="email" class="auth__input" placeholder="E-mail" required>
+        <input type="text" name="surname" class="auth__input" placeholder="Фамилия" required>
+        <input type="text" name="name" class="auth__input" placeholder="Имя" required>
+        <label class="auth__label">
+          Дата рождения:
+          <input type="date" name="birthday" class="auth__input" required>
+        </label>
+        <input type="tel" name="phone" class="auth__input" placeholder="Телефон" required>
+        <input type="password" name="password" class="auth__input" placeholder="Пароль" required>
+        <input type="password" name="password" class="auth__input" placeholder="Повторите пароль" required>
+        <label class="auth__checkbox-label">
+          <input type="checkbox" name="agreement" class="auth__checkbox" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button type="submit" class="auth__button">Зарегистрироваться</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:89008007766" class="footer__link">8-800-900-77-66</a>
+          <a href="mailto:best@games.ru" class="footer__link">best@games.ru</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнёрам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="index.html#quick-search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

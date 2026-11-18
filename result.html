@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="images/logo.png" alt="Логотип BestGames" class="header__logo-image">
+          <div class="header__logo-text">
+            <p class="header__logo-title">Best</p>
+            <span class="header__logo-accent">Games</span>
+          </div>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="header__burger-toggle">
+
+        <label for="burger-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__nav-wrapper">
+          <nav class="header__navbar">
+            <a href="index.html#quick-search" class="header__link">Поиск</a>
+            <a href="profile.html" class="header__link">Личный кабинет</a>
+            <a href="catalog.html" class="header__link">Каталог игр</a>
+            <a href="profile.html" class="header__link">Избранное</a>
+          </nav>
+          <a href="login.html" class="header__registration">Войти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="game-page">
+    <div class="container">
+      <a href="catalog.html" class="game-page__back">&larr; Вернуться в каталог</a>
+      <div class="game-page__grid">
+        <div class="game-page__image-wrapper">
+          <img src="images/game-card5.png" class="game-page__image" alt="Cyperpunk 2077">
+        </div>
+        <div class="game-page__info">
+          <h1 class="game-page__title">Cyperpunk 2077</h1>
+          <div class="game-page__meta">
+            <p class="game-page__genre">RPG / Экшен</p>
+            <p class="game-page__developer">CD Projekt RED</p>
+          </div>
+          <div class="game-page__buy">
+            <span class="game-page__price">950 ₽</span>
+            <button class="game-page__button">Добавить в корзину</button>
+          </div>
+          <div class="game-page__description">
+            <h3>Описание игры</h3>
+            <p>Киберпанк 2077 — это приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити.
+              Здесь вы сможете стать наемником и определить будущее города</p>
+          </div>
+          <div class="game-page__tags">
+            <h3>Теги</h3>
+            <ul class="game-page__tags-list">
+              <li>Открытый мир</li>
+              <li>Киберпанк</li>
+              <li>Сюжетная игра</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:89008007766" class="footer__link">8-800-900-77-66</a>
+          <a href="mailto:best@games.ru" class="footer__link">best@games.ru</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнёрам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="index.html#quick-search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
